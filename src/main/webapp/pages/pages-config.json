@@ -19,8 +19,20 @@
   "type" : "HEADER",
   "params" : [ ]
 }, {
+  "name" : "kredit_main_page",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
   "name" : "leftnav",
   "type" : "LEFTNAV",
+  "params" : [ ]
+}, {
+  "name" : "login_page",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "pinjaman_page",
+  "type" : "PAGE",
   "params" : [ ]
 }, {
   "name" : "rightnav",

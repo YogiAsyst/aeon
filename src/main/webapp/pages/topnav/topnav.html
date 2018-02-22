@@ -1,22 +1,17 @@
 <wm-partial data-ng-controller="topnavPageController" name="topnav" type="topnav">
-    <wm-navbar name="navbar1">
+    <wm-navbar name="navbar1" imgsrc="resources/images/imagelists/aeon-logo3.png" backgroundcolor="#333399">
         <wm-nav name="leftTopLinks" type="navbar" class="navbar-left">
             <wm-nav-item name="list_home">
-                <wm-anchor caption="Home" name="homeLink" iconclass="wi wi-home" on-click="Variables.goToPage_Main.invoke()"></wm-anchor>
+                <wm-anchor caption="Kartu Kredit" name="homeLink" iconclass="wi wi-credit-card" on-click="Actions.goToPage_kredit_main_page.invoke()"></wm-anchor>
             </wm-nav-item>
             <wm-nav-item name="list_services">
-                <wm-anchor caption="Order" name="orderLink" iconclass="wi wi-list"></wm-anchor>
-            </wm-nav-item>
-            <wm-nav-item name="nav_item5">
-                <wm-anchor name="anchor5" iconclass="wi wi-file"></wm-anchor>
+                <wm-anchor caption="Pinjaman" name="orderLink" iconclass="wi wi-attach-money" on-click="Actions.goToPage_pinjaman_page.invoke()"></wm-anchor>
             </wm-nav-item>
         </wm-nav>
         <wm-nav name="rightTopLinks" type="navbar" class="navbar-right">
-            <wm-nav-item name="list_help">
-                <wm-anchor caption="Help" name="helpLink" iconclass="wi wi-help-outline"></wm-anchor>
-            </wm-nav-item>
+            <wm-nav-item name="list_help"></wm-nav-item>
             <wm-nav-item name="list_logout">
-                <wm-anchor caption="Logout" name="logoutLink" iconclass="wi wi-sign-out" on-click="Actions.logoutAction.invoke()"></wm-anchor>
+                <wm-anchor caption="Login" name="logoutLink" iconclass="wi wi-sign-in"></wm-anchor>
             </wm-nav-item>
         </wm-nav>
     </wm-navbar>

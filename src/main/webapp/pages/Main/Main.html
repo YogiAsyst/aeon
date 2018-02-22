@@ -1,10 +1,30 @@
 <wm-page data-ng-controller="MainPageController" name="mainpage" pagetitle="Main">
-    <wm-header content="header" name="header" height="auto" backgroundcolor="#fffafa"></wm-header>
+    <wm-header content="header" name="header" height="auto" backgroundcolor="#ffffff" overflow="visible"></wm-header>
     <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
     <wm-content name="content">
-        <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav"></wm-left-panel>
-        <wm-page-content columnwidth="8" name="mainContent" padding="unset 15px" backgroundcolor="ffffff"></wm-page-content>
-        <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
+        <wm-page-content columnwidth="12" name="mainContent" padding="unset 15px" backgroundcolor="ffffff">
+            <wm-layoutgrid name="layoutgrid1">
+                <wm-gridrow name="gridrow1">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn1"></wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn2"></wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow2">
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn3">
+                        <wm-carousel height="480" name="carousel1">
+                            <wm-carousel-content name="carousel_content1">
+                                <wm-picture width="100%" name="picture1" picturesource="resources/images/imagelists/cc-1.png" pictureaspect="Both"></wm-picture>
+                            </wm-carousel-content>
+                            <wm-carousel-content name="carousel_content2">
+                                <wm-picture width="100%" name="picture2" picturesource="resources/images/imagelists/cc-2.jpg" pictureaspect="Both"></wm-picture>
+                            </wm-carousel-content>
+                            <wm-carousel-content name="carousel_content3">
+                                <wm-picture width="100%" name="picture3" picturesource="resources/images/imagelists/cc-3.png" pictureaspect="Both"></wm-picture>
+                            </wm-carousel-content>
+                        </wm-carousel>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
+        </wm-page-content>
     </wm-content>
-    <wm-footer name="footer" content="footer"></wm-footer>
+    <wm-footer name="footer" content="footer" backgroundcolor="#fff"></wm-footer>
 </wm-page>

@@ -1,0 +1,60 @@
+<wm-page data-ng-controller="login_pagePageController" name="page1">
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-layoutgrid name="loginGrid" height="100%">
+                <wm-gridrow name="topRow" height="12%">
+                    <wm-gridcolumn columnwidth="12" height="6" class="bg-primary" name="bordercolumn"></wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="logoRow">
+                    <wm-gridcolumn columnwidth="12" horizontalalign="center" class="col-xs-12" name="gridcolumn2">
+                        <wm-picture name="logo" picturesource="resources/images/imagelists/aeon.png" height="200" margin="1em" width="200"></wm-picture>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="loginRow">
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn8" class="col-xs-1 col-md-4"></wm-gridcolumn>
+                    <wm-gridcolumn name="loginContentColumn" columnwidth="6" class="col-xs-10  col-md-4">
+                        <wm-container name="loginFormPanel" class="panel panel-default" backgroundcolor="#ffffff" color="#cccccc" style="max-width:400px; margin-left: auto; margin-right: auto;" opacity="1">
+                            <wm-label name="label1" caption="Login" horizontalalign="center" class="h1 text-uppercase" margin="0px unset" padding="0.5em unset" color="#cccccc"></wm-label>
+                            <wm-login name="loginForm" data-ng-controller="loginFormController" on-submit="Actions.loginAction.invoke()" title="" autocomplete="nofill">
+                                <wm-layoutgrid name="layoutgrid2">
+                                    <wm-gridrow name="gridrow2">
+                                        <wm-gridcolumn columnwidth="12" name="gridcolumn4" padding="unset unset 2em unset">
+                                            <wm-text placeholder="Email address" name="usernametext" class="app-login-username" width="100%" autocomplete="false" autocorrect="off" autocapitalize="off" updateon="default" required="true"></wm-text>
+                                        </wm-gridcolumn>
+                                    </wm-gridrow>
+                                    <wm-gridrow name="gridrow3">
+                                        <wm-gridcolumn columnwidth="12" name="gridcolumn7">
+                                            <wm-text type="password" name="passwordtext" placeholder="Password" class="app-login-password" width="100%" autocomplete="true" autocorrect="off" autocapitalize="off" updateon="default" required="true"></wm-text>
+                                        </wm-gridcolumn>
+                                    </wm-gridrow>
+                                    <wm-gridrow name="gridrow6">
+                                        <wm-gridcolumn columnwidth="12" name="gridcolumn14">
+                                            <wm-checkbox caption="Remember me" name="remembermecheck"></wm-checkbox>
+                                        </wm-gridcolumn>
+                                    </wm-gridrow>
+                                    <wm-gridrow name="gridrow4">
+                                        <wm-gridcolumn columnwidth="12" name="gridcolumn10">
+                                            <wm-button type="submit" caption="Login" width="100%" class="app-login-button btn-primary" name="loginButton" fontsize="1.2" fontunit="em" on-click="Actions.goToPage_Main.invoke()"></wm-button>
+                                        </wm-gridcolumn>
+                                    </wm-gridrow>
+                                    <wm-gridrow name="gridrow8" padding="2em unset unset unset">
+                                        <wm-gridcolumn columnwidth="12" name="gridcolumn13" horizontalalign="center">
+                                            <wm-label name="socalloginlabel" caption="Or Login using" class="text-muted vertical-align-middle col-md-5 col-xs-12" textalign="center" color="#cccccc" padding="0.5em 0em unset 0em" margin="5px unset 8px unset"></wm-label>
+                                            <wm-button name="wmSocialV2FbBtn" caption="" iconclass="fa fa-facebook" class="btn-primary btn-rounded" backgroundcolor="#385ca5" bordercolor="#385ca5" borderstyle="solid" margin="unset 0.8em unset 0.4em"
+                                                padding="0px 1px" height="24pt" width="24pt" fontsize="1.5" fontunit="em"></wm-button>
+                                            <wm-button caption="" iconclass="fa fa-twitter" class="btn-primary btn-rounded" name="wmSocialV2TwitterBtn" backgroundcolor="#2ca7e4" bordercolor="#2ca7e4" borderstyle="solid" margin="unset 0.8em unset unset"
+                                                padding="0px 1px" width="24pt" height="24pt" fontsize="1.5" fontunit="em"></wm-button>
+                                            <wm-button caption="" iconclass="fa fa-google-plus" class="btn-danger btn-rounded" name="wmSocialV2GPlusBtn" backgroundcolor="#dd321a" bordercolor="#dd321a" borderstyle="solid" padding="0px 1px"
+                                                width="24pt" height="24pt" fontsize="1.2" fontunit="em"></wm-button>
+                                        </wm-gridcolumn>
+                                    </wm-gridrow>
+                                </wm-layoutgrid>
+                            </wm-login>
+                        </wm-container>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn9" class="col-xs-1 col-md-4"></wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
+        </wm-page-content>
+    </wm-content>
+</wm-page>

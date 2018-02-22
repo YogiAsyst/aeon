@@ -1,18 +1,34 @@
 <wm-partial data-ng-controller="headerPageController" name="header" type="header">
     <wm-layoutgrid name="headerlayout">
         <wm-gridrow name="headerrow">
-            <wm-gridcolumn name="headerleft" verticalalign="middle" columnwidth="1">
-                <wm-picture picturesource="resources/images/imagelists/aeon_credit_service.jpg" name="AppLogo" pictureaspect="H"></wm-picture>
-            </wm-gridcolumn>
-            <wm-gridcolumn name="headerright" horizontalalign="center" verticalalign="middle" columnwidth="10" padding="1em 1em unset unset">
-                <wm-label caption="AEON CREDIT SERVICE" class="application-name" name="AppName" fontsize="40" color="#333399" fontweight="bold" textalign="center"></wm-label>
-                <wm-nav type="pills" autoclose="outsideClick" name="nav1" horizontalalign="center">
-                    <wm-nav-item name="nav_item7">
-                        <wm-menu caption="Menu" autoclose="outsideClick" name="menu1" iconclass="wi wi-file" type="anchor"></wm-menu>
+            <wm-gridcolumn name="headerleft" verticalalign="middle" columnwidth="5"></wm-gridcolumn>
+            <wm-gridcolumn name="headerright" horizontalalign="left" verticalalign="middle" columnwidth="5" padding="1em 1em unset unset">
+                <wm-nav type="pills" autoclose="outsideClick" name="nav2" horizontalalign="left" color="#000000" on-select="Actions.goToPage_Main.invoke()">
+                    <wm-nav-item name="nav_item4">
+                        <wm-anchor name="anchor1" iconclass="wi wi-file" width="135" caption="Home" color="#000000"></wm-anchor>
+                    </wm-nav-item>
+                    <wm-nav-item name="nav_item8">
+                        <wm-menu caption="Corporate" autoclose="outsideClick" name="menu2" iconclass="wi wi-file" type="anchor" color="#000000" width="135"></wm-menu>
+                    </wm-nav-item>
+                    <wm-nav-item name="nav_item9">
+                        <wm-menu caption="Kontak Kami" autoclose="outsideClick" name="menu3" iconclass="wi wi-file" type="anchor" color="#000000" textalign="left" horizontalalign="left" width="135"></wm-menu>
                     </wm-nav-item>
                 </wm-nav>
             </wm-gridcolumn>
-            <wm-gridcolumn columnwidth="1" name="gridcolumn3"></wm-gridcolumn>
+            <wm-gridcolumn columnwidth="2" name="gridcolumn4" horizontalalign="right" padding="1em unset unset unset">
+                <wm-layoutgrid name="layoutgrid2">
+                    <wm-gridrow name="gridrow2">
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn4_1">
+                            <wm-search name="search1"></wm-search>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn5" padding="10px 10px unset unset">
+                            <wm-label padding="unset 0.5em" name="label1" caption="ID" color="#000"></wm-label>
+                            <wm-label padding="unset 0.5em" name="label2" caption="|" color="#000"></wm-label>
+                            <wm-label padding="unset 0.5em" name="label3" caption="EN" color="#000"></wm-label>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                </wm-layoutgrid>
+            </wm-gridcolumn>
         </wm-gridrow>
     </wm-layoutgrid>
 </wm-partial>

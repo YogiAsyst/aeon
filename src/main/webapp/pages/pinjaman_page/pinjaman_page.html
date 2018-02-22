@@ -1,0 +1,188 @@
+<wm-page data-ng-controller="pinjaman_pagePageController" name="page1">
+    <wm-header content="header" name="header1" backgroundcolor="#ffffff"></wm-header>
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-layoutgrid name="layoutgrid1">
+                <wm-gridrow name="gridrow1">
+                    <wm-gridcolumn columnwidth="12" padding=".5em" name="gridcolumn1">
+                        <wm-tile name="tile1">
+                            <wm-layoutgrid name="layoutgrid2">
+                                <wm-gridrow name="gridrow2">
+                                    <wm-gridcolumn columnwidth="12" horizontalalign="center" padding="1em 0em 0em 0em" name="gridcolumn2">
+                                        <wm-carousel height="300" name="carousel1">
+                                            <wm-carousel-content name="carousel_content1">
+                                                <wm-picture width="100%" name="picture4" picturesource="resources/images/imagelists/690x300web-banner-aeon-card4.png" pictureaspect="V"></wm-picture>
+                                            </wm-carousel-content>
+                                            <wm-carousel-content name="carousel_content2">
+                                                <wm-picture width="100%" name="picture5"></wm-picture>
+                                            </wm-carousel-content>
+                                            <wm-carousel-content name="carousel_content3">
+                                                <wm-picture width="100%" name="picture6"></wm-picture>
+                                            </wm-carousel-content>
+                                        </wm-carousel>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                            </wm-layoutgrid>
+                        </wm-tile>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow4">
+                    <wm-gridcolumn columnwidth="2" horizontalalign="center" padding=".5em" name="gridcolumn4">
+                        <wm-tile horizontalalign="center" backgroundcolor="#333399" color="#fff" padding="1em 0em" name="tile2" fontsize="10">
+                            <wm-label caption="Cara Pengajuan" fontweight="bold" width="100%" margin="0em" name="label3" fontsize="1.5" fontunit="em"></wm-label>
+                        </wm-tile>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="2" horizontalalign="center " padding=".5em " name="gridcolumn6">
+                        <wm-tile backgroundcolor="#333399" color="#fff" padding="1em 0em " name="tile4" fontsize="10">
+                            <wm-label caption="Express Card" fontweight="bold " width="100%" margin="0px" name="label7" fontsize="1.5" fontunit="em"></wm-label>
+                        </wm-tile>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="2" horizontalalign="center" padding=".5em" name="gridcolumn7">
+                        <wm-tile backgroundcolor="#333399" color="#fff" padding="1em 0em" name="tile5" fontsize="10">
+                            <wm-label caption="Kartu Memberi" fontweight="bold" width="100%" margin="0px" name="label9" fontsize="1.5" fontunit="em"></wm-label>
+                        </wm-tile>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn15_1" padding=".5em">
+                        <wm-tile backgroundcolor="#333399" color="#fff" padding="1em 0em" name="tile8" fontsize="10">
+                            <wm-label caption="Metode Pembayaran" fontweight="bold" width="100%" margin="0px" fontsize="1.5" fontunit="em" name="label18_1" textalign="center"></wm-label>
+                        </wm-tile>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="2" horizontalalign="center" padding=".5em" name="gridcolumn5">
+                        <wm-tile backgroundcolor="#333399" color="#fff" padding="1em 0em" name="tile3" fontsize="10">
+                            <wm-label caption="Panduan Konsumen" fontweight="bold" width="100% " margin="0em " name="label5" fontsize="1.5" fontunit="em"></wm-label>
+                        </wm-tile>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn16" padding=".5em">
+                        <wm-tile backgroundcolor="#333399" color="#fff" padding="1em 0em" name="tile9" fontsize="10">
+                            <wm-label caption="F.A.Q." fontweight="bold" width="100%" margin="0px" fontsize="1.5" fontunit="em" name="label19_1" textalign="center"></wm-label>
+                        </wm-tile>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow5">
+                    <wm-gridcolumn columnwidth="12" horizontalalign="center" padding=".5em" name="gridcolumn8">
+                        <wm-layoutgrid name="layoutgrid5">
+                            <wm-gridrow name="gridrow9_1">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn17">
+                                    <wm-label padding="unset 0.5em" name="label16_1" caption="Simulasi Kredit" fontweight="bold" fontsize="25"></wm-label>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                        </wm-layoutgrid>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow6">
+                    <wm-gridcolumn columnwidth="8" padding=".5em" name="gridcolumn9">
+                        <wm-layoutgrid name="layoutgrid6">
+                            <wm-gridrow name="gridrow12">
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn27">
+                                    <wm-composite name="composite1">
+                                        <wm-label class="col-md-3 control-label" name="label17" caption="Harga"></wm-label>
+                                        <wm-container class="col-md-9" name="container5">
+                                            <wm-text name="text1" datavalue="bind:Widgets.slider4.datavalue"></wm-text>
+                                        </wm-container>
+                                    </wm-composite>
+                                </wm-gridcolumn>
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn28">
+                                    <wm-slider name="slider4" step="10000" maxvalue="25000000" minvalue="0" margin="5px unset unset unset" datavalue="bind:Widgets.text1.datavalue"></wm-slider>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow13">
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn29">
+                                    <wm-composite name="composite2">
+                                        <wm-label class="col-md-3 control-label" caption="Tenor" name="label18_2"></wm-label>
+                                        <wm-container class="col-md-9" name="container6">
+                                            <wm-text name="text2" datavalue="bind:Widgets.slider2.datavalue"></wm-text>
+                                        </wm-container>
+                                    </wm-composite>
+                                </wm-gridcolumn>
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn30">
+                                    <wm-slider name="slider2" maxvalue="24" minvalue="0" step="3" margin="5px unset unset unset" datavalue="bind:Widgets.text2.datavalue"></wm-slider>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow14">
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn31">
+                                    <wm-composite name="composite3">
+                                        <wm-label class="col-md-3 control-label" caption="Uang muka" name="label19_2"></wm-label>
+                                        <wm-container class="col-md-9" name="container7">
+                                            <wm-text name="text3" datavalue="bind:Widgets.slider3.datavalue"></wm-text>
+                                        </wm-container>
+                                        <wm-label class="col-md-3 control-label" caption="(dan Biaya Admin)" name="label20" margin="-20px unset unset unset" fontsize="10"></wm-label>
+                                    </wm-composite>
+                                </wm-gridcolumn>
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn32">
+                                    <wm-slider name="slider3" minvalue="0" maxvalue="100000" step="10000" margin="5px unset unset unset" datavalue="bind:Widgets.text3.datavalue"></wm-slider>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                        </wm-layoutgrid>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="4" padding=".5em" name="gridcolumn10">
+                        <wm-layoutgrid name="layoutgrid7">
+                            <wm-gridrow name="gridrow14_1">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn30_1" horizontalalign="center">
+                                    <wm-label padding="unset 0.5em" name="label14" caption="Cicilan bulanan Anda"></wm-label>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow16">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn34" horizontalalign="center">
+                                    <wm-label padding="unset 0.5em" caption="IDR 95.000,-" name="label15" fontweight="bold" fontsize="30" textalign="center"></wm-label>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow17">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn35" horizontalalign="center">
+                                    <wm-label padding="unset 0.5em" caption="Termasuk biaya bulanan" name="label17_1"></wm-label>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow15">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn32_1" horizontalalign="center">
+                                    <wm-label padding="unset 0.5em" caption="Perhitungan bersifat simulasi dan bertujuan sebagai ilustrasi" name="label18" fontsize="12" fontstyle="italic"></wm-label>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow18">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn36" horizontalalign="center">
+                                    <wm-button class="btn-default" caption="Ajukan sekarang!" type="button" margin="unset 0.5em" name="button1" backgroundcolor="#ff9933" fontweight="bold"></wm-button>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                        </wm-layoutgrid>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow19">
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn37">
+                        <wm-layoutgrid name="layoutgrid8">
+                            <wm-gridrow name="gridrow22">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn43" horizontalalign="center">
+                                    <wm-label padding="unset 0.5em" name="label19" caption="Beberapa Mitra Kami" fontweight="bold" fontsize="25"></wm-label>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow23">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn45">
+                                    <wm-carousel height="120" name="carousel3">
+                                        <wm-carousel-content name="carousel_content4">
+                                            <wm-picture name="picture7"></wm-picture>
+                                        </wm-carousel-content>
+                                        <wm-carousel-content name="carousel_content5">
+                                            <wm-picture width="100%" name="picture8"></wm-picture>
+                                        </wm-carousel-content>
+                                        <wm-carousel-content name="carousel_content6">
+                                            <wm-picture width="100%" name="picture9"></wm-picture>
+                                        </wm-carousel-content>
+                                    </wm-carousel>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                        </wm-layoutgrid>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow20">
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn39" horizontalalign="center">
+                        <wm-label padding="unset 0.5em" caption="Temukan Toko Mitra Kami" fontweight="bold" fontsize="25" name="label20_1"></wm-label>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow21">
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn41">
+                        <wm-prefab prefabname="googlemaps" name="googlemaps1" locations="bind:Variables.staticVariable1.dataSet" lat="lat" lng="lon" zoom="17"></wm-prefab>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer content="footer" name="footer1" backgroundcolor="#fff"></wm-footer>
+</wm-page>

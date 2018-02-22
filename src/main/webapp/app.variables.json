@@ -15,6 +15,28 @@
     } ],
     "operation" : "toast"
   },
+  "goToPage_kredit_main_page" : {
+    "_id" : "wm-goToPage_kredit_main_page-wm.NavigationVariable-1519291225686",
+    "name" : "goToPage_kredit_main_page",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "kredit_main_page",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_login_page" : {
+    "_id" : "wm-goToPage_login_page-wm.NavigationVariable-1519289648542",
+    "name" : "goToPage_login_page",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "login_page",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
   "goToPage_Main" : {
     "_id" : "wm-wm.NavigationVariable1389180517517",
     "name" : "goToPage_Main",
@@ -23,16 +45,30 @@
     "operation" : "gotoPage",
     "pageName" : "Main"
   },
+  "goToPage_pinjaman_page" : {
+    "_id" : "wm-goToPage_pinjaman_page-wm.NavigationVariable-1519299896885",
+    "name" : "goToPage_pinjaman_page",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "pinjaman_page",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
   "supportedLocale" : {
     "_id" : "wm-wm.Variable1402640443182",
     "name" : "supportedLocale",
     "owner" : "App",
     "category" : "wm.Variable",
-    "dataSet" : {
+    "dataBinding" : [ ],
+    "dataSet" : [ {
       "en" : "English"
-    },
+    }, {
+      "en" : "Indonesia"
+    } ],
     "type" : "string",
-    "isList" : false,
+    "isList" : true,
     "saveInPhonegap" : false
   }
 }
