@@ -1,4 +1,4 @@
-<wm-page data-ng-controller="pinjaman_pagePageController" name="page1">
+<wm-page data-ng-controller="pinjaman_pagePageController" name="page1" pagetitle="Pinjaman">
     <wm-header content="header" name="header1" backgroundcolor="#ffffff"></wm-header>
     <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav>
     <wm-content name="content1">
@@ -6,25 +6,23 @@
             <wm-layoutgrid name="layoutgrid1">
                 <wm-gridrow name="gridrow1">
                     <wm-gridcolumn columnwidth="12" padding=".5em" name="gridcolumn1">
-                        <wm-tile name="tile1">
-                            <wm-layoutgrid name="layoutgrid2">
-                                <wm-gridrow name="gridrow2">
-                                    <wm-gridcolumn columnwidth="12" horizontalalign="center" padding="1em 0em 0em 0em" name="gridcolumn2">
-                                        <wm-carousel height="300" name="carousel1">
-                                            <wm-carousel-content name="carousel_content1">
-                                                <wm-picture width="100%" name="picture4" picturesource="resources/images/imagelists/690x300web-banner-aeon-card4.png" pictureaspect="V"></wm-picture>
-                                            </wm-carousel-content>
-                                            <wm-carousel-content name="carousel_content2">
-                                                <wm-picture width="100%" name="picture5"></wm-picture>
-                                            </wm-carousel-content>
-                                            <wm-carousel-content name="carousel_content3">
-                                                <wm-picture width="100%" name="picture6"></wm-picture>
-                                            </wm-carousel-content>
-                                        </wm-carousel>
-                                    </wm-gridcolumn>
-                                </wm-gridrow>
-                            </wm-layoutgrid>
-                        </wm-tile>
+                        <wm-carousel height="390" name="carousel3_1">
+                            <wm-carousel-content name="carousel_content7">
+                                <wm-picture width="100%" name="picture7_1" picturesource="resources/images/imagelists/WEB3.jpg"></wm-picture>
+                            </wm-carousel-content>
+                            <wm-carousel-content name="carousel_content8">
+                                <wm-picture width="100%" name="picture8_1" picturesource="resources/images/imagelists/WEB-ditrip.jpg"></wm-picture>
+                            </wm-carousel-content>
+                            <wm-carousel-content name="carousel_content9">
+                                <wm-picture width="100%" name="picture9_1" picturesource="resources/images/imagelists/WEB-hansell.jpg"></wm-picture>
+                            </wm-carousel-content>
+                            <wm-carousel-content name="carousel_content10">
+                                <wm-picture width="100%" name="picture10" picturesource="resources/images/imagelists/WEB-hosana.jpg"></wm-picture>
+                            </wm-carousel-content>
+                            <wm-carousel-content name="carousel_content11">
+                                <wm-picture width="100%" name="picture11" picturesource="resources/images/imagelists/web-petrof.jpg"></wm-picture>
+                            </wm-carousel-content>
+                        </wm-carousel>
                     </wm-gridcolumn>
                 </wm-gridrow>
                 <wm-gridrow name="gridrow4">
@@ -59,7 +57,7 @@
                         </wm-tile>
                     </wm-gridcolumn>
                 </wm-gridrow>
-                <wm-gridrow name="gridrow5">
+                <wm-gridrow name="gridrow5" padding="20px unset unset unset">
                     <wm-gridcolumn columnwidth="12" horizontalalign="center" padding=".5em" name="gridcolumn8">
                         <wm-layoutgrid name="layoutgrid5">
                             <wm-gridrow name="gridrow9_1">
@@ -83,7 +81,7 @@
                                     </wm-composite>
                                 </wm-gridcolumn>
                                 <wm-gridcolumn columnwidth="6" name="gridcolumn28">
-                                    <wm-slider name="slider4" step="10000" maxvalue="25000000" minvalue="0" margin="5px unset unset unset" datavalue="bind:Widgets.text1.datavalue"></wm-slider>
+                                    <wm-slider name="slider4" step="1000000" maxvalue="25000000" minvalue="1000000" margin="5px unset unset unset" datavalue="bind:Widgets.text1.datavalue"></wm-slider>
                                 </wm-gridcolumn>
                             </wm-gridrow>
                             <wm-gridrow name="gridrow13">
@@ -148,7 +146,7 @@
                 <wm-gridrow name="gridrow19">
                     <wm-gridcolumn columnwidth="12" name="gridcolumn37">
                         <wm-layoutgrid name="layoutgrid8">
-                            <wm-gridrow name="gridrow22">
+                            <wm-gridrow name="gridrow22" padding="20px unset unset unset">
                                 <wm-gridcolumn columnwidth="12" name="gridcolumn43" horizontalalign="center">
                                     <wm-label padding="unset 0.5em" name="label19" caption="Beberapa Mitra Kami" fontweight="bold" fontsize="25"></wm-label>
                                 </wm-gridcolumn>
@@ -156,14 +154,20 @@
                             <wm-gridrow name="gridrow23">
                                 <wm-gridcolumn columnwidth="12" name="gridcolumn45">
                                     <wm-carousel height="120" name="carousel3">
-                                        <wm-carousel-content name="carousel_content4">
-                                            <wm-picture name="picture7"></wm-picture>
+                                        <wm-carousel-content name="carousel_content4" horizontalalign="center">
+                                            <wm-picture name="picture7" picturesource="resources/images/imagelists/512px-Samsung_Logo.svg.png" width="400" height="100" pictureaspect="V"></wm-picture>
                                         </wm-carousel-content>
-                                        <wm-carousel-content name="carousel_content5">
-                                            <wm-picture width="100%" name="picture8"></wm-picture>
+                                        <wm-carousel-content name="carousel_content5" horizontalalign="center">
+                                            <wm-picture name="picture8" picturesource="resources/images/imagelists/Aeonmall_store_logo.svg.png" height="100"></wm-picture>
                                         </wm-carousel-content>
-                                        <wm-carousel-content name="carousel_content6">
-                                            <wm-picture width="100%" name="picture9"></wm-picture>
+                                        <wm-carousel-content name="carousel_content6" horizontalalign="center">
+                                            <wm-picture width="250" name="picture9" picturesource="resources/images/imagelists/ibox.jpg" height="100"></wm-picture>
+                                        </wm-carousel-content>
+                                        <wm-carousel-content name="carousel_content9_1" horizontalalign="center">
+                                            <wm-picture width="220" name="picture9_2" picturesource="resources/images/imagelists/eci-logo-white.png" pictureaspect="H" height="110"></wm-picture>
+                                        </wm-carousel-content>
+                                        <wm-carousel-content name="carousel_content10_1" horizontalalign="center">
+                                            <wm-picture width="350" name="picture10_1" picturesource="resources/images/imagelists/Tokopedia_baru.png" height="120"></wm-picture>
                                         </wm-carousel-content>
                                     </wm-carousel>
                                 </wm-gridcolumn>
@@ -171,7 +175,7 @@
                         </wm-layoutgrid>
                     </wm-gridcolumn>
                 </wm-gridrow>
-                <wm-gridrow name="gridrow20">
+                <wm-gridrow name="gridrow20" padding="20px unset unset unset">
                     <wm-gridcolumn columnwidth="12" name="gridcolumn39" horizontalalign="center">
                         <wm-label padding="unset 0.5em" caption="Temukan Toko Mitra Kami" fontweight="bold" fontsize="25" name="label20_1"></wm-label>
                     </wm-gridcolumn>

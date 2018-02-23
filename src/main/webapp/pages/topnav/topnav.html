@@ -11,7 +11,10 @@
         <wm-nav name="rightTopLinks" type="navbar" class="navbar-right">
             <wm-nav-item name="list_help"></wm-nav-item>
             <wm-nav-item name="list_logout">
-                <wm-anchor caption="Login" name="logoutLink" iconclass="wi wi-sign-in"></wm-anchor>
+                <wm-anchor caption="Login" name="logoutLink" iconclass="wi wi-sign-in" on-click="Actions.goToPage_login_page.invoke()"></wm-anchor>
+            </wm-nav-item>
+            <wm-nav-item name="nav_item5">
+                <wm-anchor name="anchor4" iconclass="wi wi-file" caption="Register" on-click="Actions.goToPage_registrasi_page.invoke()"></wm-anchor>
             </wm-nav-item>
         </wm-nav>
     </wm-navbar>

@@ -1,0 +1,92 @@
+<wm-page data-ng-controller="registrasi_pagePageController" name="page1" pagetitle="Registrasi">
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-layoutgrid name="layoutgrid4" height="100%" width="100%">
+                <wm-gridrow name="gridrow6" height="10%" class="hidden-xs">
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn9" class="hidden-xs"></wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow17">
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn7"></wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn25" padding="1em" height="100%">
+                        <wm-form title="Create a new Account" style="max-width: 450px; margin: 0 auto;" class="panel panel-primary" name="signupForm" captionposition="top" width="800px">
+                            <wm-layoutgrid name="layoutgrid6">
+                                <wm-gridrow name="gridrow14_2">
+                                    <wm-gridcolumn columnwidth="8" name="gridcolumn15_1" padding=".5em 1em">
+                                        <wm-layoutgrid name="layoutgrid5">
+                                            <wm-gridrow name="gridrow7">
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn10">
+                                                    <wm-composite margin="unset unset 1.5em unset" name="composite4">
+                                                        <wm-label class="col-md-12" caption="Kode Pelanggan/Nomor Kartu Kredit" required="true" name="label5"></wm-label>
+                                                        <wm-container class="col-md-12" name="container4">
+                                                            <wm-text tabindex="1" placeholder="Type Kode Pelanggan" name="text4"></wm-text>
+                                                        </wm-container>
+                                                    </wm-composite>
+                                                </wm-gridcolumn>
+                                            </wm-gridrow>
+                                            <wm-gridrow name="gridrow8">
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn11">
+                                                    <wm-composite margin="unset unset 1.5em unset" name="composite5">
+                                                        <wm-label class="col-md-12" caption="Tanggal Lahir" required="true" name="label6"></wm-label>
+                                                        <wm-container class="col-md-12" name="container5">
+                                                            <wm-form-field widget="date" show="true" type="custom" name="form_field1"></wm-form-field>
+                                                        </wm-container>
+                                                    </wm-composite>
+                                                </wm-gridcolumn>
+                                            </wm-gridrow>
+                                            <wm-gridrow name="gridrow12_1">
+                                                <wm-gridcolumn name="gridcolumn12">
+                                                    <wm-composite name="composite4_1" margin="unset unset 1.5em unset">
+                                                        <wm-label class="col-md-12" caption="Email" name="wmSignupEmailLbl" required="true"></wm-label>
+                                                        <wm-container class="col-md-12" name="container4_1">
+                                                            <wm-text tabindex="1" placeholder="Type Email Address" name="wmSignupEmail"></wm-text>
+                                                        </wm-container>
+                                                    </wm-composite>
+                                                </wm-gridcolumn>
+                                            </wm-gridrow>
+                                            <wm-gridrow name="gridrow13_1">
+                                                <wm-gridcolumn name="gridcolumn13_1">
+                                                    <wm-composite name="composite5_1" margin="unset unset 1.5em unset">
+                                                        <wm-label class="col-md-12" caption="Password" name="wmSignupPasswordLbl" required="true"></wm-label>
+                                                        <wm-container class="col-md-12" name="container5_1" opacity="1">
+                                                            <wm-text name="wmSignupPassword" type="password" placeholder="Type Password"></wm-text>
+                                                        </wm-container>
+                                                    </wm-composite>
+                                                </wm-gridcolumn>
+                                            </wm-gridrow>
+                                            <wm-gridrow name="gridrow14_1">
+                                                <wm-gridcolumn name="gridcolumn14_1">
+                                                    <wm-composite horizontalalign="left" name="composite6_1" margin="unset unset 1.5em unset">
+                                                        <wm-label class="col-md-12" caption="Konfirmasi Password" name="wmSignupConfirmPasswordLbl" required="true"></wm-label>
+                                                        <wm-container class="col-md-12" name="container6_1">
+                                                            <wm-text name="wmSignupConfirmPassword" type="password" placeholder="Retype Password"></wm-text>
+                                                        </wm-container>
+                                                    </wm-composite>
+                                                </wm-gridcolumn>
+                                            </wm-gridrow>
+                                            <wm-gridrow name="gridrow9">
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn12_1">
+                                                    <wm-form-field displayname="Saya menyetujui syarat dan ketentuan yang berlaku" widget="checkbox" show="true" type="custom" name="form_field2" required="true" caption=""></wm-form-field>
+                                                </wm-gridcolumn>
+                                            </wm-gridrow>
+                                        </wm-layoutgrid>
+                                        <wm-button caption="Create Account" type="submit" class="btn-primary" width="100%" name="wmSignupAccountButton" margin="unset unset .5em unset" backgroundcolor="#333399" on-click="Actions.goToPage_Main.invoke()"></wm-button>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn17_1" padding=".5em 1em">
+                                        <wm-label caption="Or connect using" textalign="center" name="wmFormSignupSocialV3OrConnectLbl" class="h4" margin="1em unset" padding=".5em 0em"></wm-label>
+                                        <wm-button iconclass="fa fa-facebook pull-left" caption="facebook" width="100%" textalign="center" fontsize="1.2" fontunit="em" name="wmFormSignupSocialV3FacebookButton" class="btn-primary" iconmargin="3px 5px 0 0"
+                                            backgroundcolor="#3b5998" bordercolor="#3b5998" borderstyle="solid" margin=".5em unset 0.5em unset"></wm-button>
+                                        <wm-button iconclass="fa fa-twitter pull-left" caption="Twitter" textalign="center" width="100%" fontsize="1.2" fontunit="em" name="wmFormSignupSocialV3TwitterButton" class="btn-primary" iconmargin="3px 5px 0 0"
+                                            backgroundcolor="#55acee" bordercolor="#55acee" borderstyle="solid" margin=".5em unset 0.5em unset"></wm-button>
+                                        <wm-button iconclass="fa fa-google pull-left" caption="google" textalign="center" width="100%" fontsize="1.2" fontunit="em" name="wmFormSignupSocialV3GoogleButton" class="btn-primary" iconmargin="3px 5px 0 0"
+                                            backgroundcolor="#dd4b39" bordercolor="#dd4b39" borderstyle="solid" margin=".5em unset 0.5em unset"></wm-button>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                            </wm-layoutgrid>
+                        </wm-form>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn8"></wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
+        </wm-page-content>
+    </wm-content>
+</wm-page>

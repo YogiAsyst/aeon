@@ -35,6 +35,10 @@
   "type" : "PAGE",
   "params" : [ ]
 }, {
+  "name" : "registrasi_page",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
   "name" : "rightnav",
   "type" : "RIGHTNAV",
   "params" : [ ]

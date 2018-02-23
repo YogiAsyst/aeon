@@ -1,4 +1,4 @@
-<wm-page data-ng-controller="login_pagePageController" name="page1">
+<wm-page data-ng-controller="login_pagePageController" name="page1" pagetitle="Login">
     <wm-content name="content1">
         <wm-page-content columnwidth="12" name="page_content1">
             <wm-layoutgrid name="loginGrid" height="100%">
@@ -34,7 +34,7 @@
                                     </wm-gridrow>
                                     <wm-gridrow name="gridrow4">
                                         <wm-gridcolumn columnwidth="12" name="gridcolumn10">
-                                            <wm-button type="submit" caption="Login" width="100%" class="app-login-button btn-primary" name="loginButton" fontsize="1.2" fontunit="em" on-click="Actions.goToPage_Main.invoke()"></wm-button>
+                                            <wm-button type="submit" caption="Login" width="100%" class="app-login-button btn-primary" name="loginButton" fontsize="1.2" fontunit="em" on-click="Actions.goToPage_Main.invoke()" backgroundcolor="#333399"></wm-button>
                                         </wm-gridcolumn>
                                     </wm-gridrow>
                                     <wm-gridrow name="gridrow8" padding="2em unset unset unset">

@@ -56,6 +56,17 @@
     "dataSet" : [ ],
     "pageTransitions" : "none"
   },
+  "goToPage_registrasi_page" : {
+    "_id" : "wm-goToPage_registrasi_page-wm.NavigationVariable-1519356982532",
+    "name" : "goToPage_registrasi_page",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "registrasi_page",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
   "supportedLocale" : {
     "_id" : "wm-wm.Variable1402640443182",
     "name" : "supportedLocale",

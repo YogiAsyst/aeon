@@ -9,18 +9,65 @@
                     <wm-gridcolumn columnwidth="6" name="gridcolumn2"></wm-gridcolumn>
                 </wm-gridrow>
                 <wm-gridrow name="gridrow2">
-                    <wm-gridcolumn columnwidth="12" name="gridcolumn3">
-                        <wm-carousel height="480" name="carousel1">
-                            <wm-carousel-content name="carousel_content1">
-                                <wm-picture width="100%" name="picture1" picturesource="resources/images/imagelists/cc-1.png" pictureaspect="Both"></wm-picture>
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn3" horizontalalign="left">
+                        <wm-carousel height="370" name="carousel1" animationinterval="4">
+                            <wm-carousel-content name="carousel_content1" horizontalalign="center">
+                                <wm-picture width="100%" name="picture1" picturesource="resources/images/imagelists/credit_card_290x3001.png" pictureaspect="Both"></wm-picture>
                             </wm-carousel-content>
-                            <wm-carousel-content name="carousel_content2">
-                                <wm-picture width="100%" name="picture2" picturesource="resources/images/imagelists/cc-2.jpg" pictureaspect="Both"></wm-picture>
-                            </wm-carousel-content>
-                            <wm-carousel-content name="carousel_content3">
-                                <wm-picture width="100%" name="picture3" picturesource="resources/images/imagelists/cc-3.png" pictureaspect="Both"></wm-picture>
+                            <wm-carousel-content name="carousel_content2" horizontalalign="center">
+                                <wm-picture width="100%" name="picture2" picturesource="resources/images/imagelists/kerahasiaan2.jpg" pictureaspect="None"></wm-picture>
                             </wm-carousel-content>
                         </wm-carousel>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow4" padding="20px unset unset unset">
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn5" horizontalalign="center">
+                        <wm-container name="container1" on-click="Actions.goToPage_pinjaman_page.invoke()">
+                            <wm-layoutgrid name="layoutgrid2">
+                                <wm-gridrow name="gridrow6">
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn14" horizontalalign="center">
+                                        <wm-icon iconclass="fa fa-dollar fa-5x" name="icon2"></wm-icon>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow name="gridrow7">
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn16" horizontalalign="center">
+                                        <wm-label padding="unset 0.5em" name="label3" caption="Bunga Rendah X%" fontweight="bold" fontsize="20"></wm-label>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                            </wm-layoutgrid>
+                        </wm-container>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn6" horizontalalign="center">
+                        <wm-container name="container2">
+                            <wm-layoutgrid name="layoutgrid3">
+                                <wm-gridrow name="gridrow8">
+                                    <wm-gridcolumn columnwidth="12" horizontalalign="center" name="gridcolumn18">
+                                        <wm-icon name="icon1" iconclass="fa fa-credit-card fa-5x"></wm-icon>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow name="gridrow9">
+                                    <wm-gridcolumn columnwidth="12" horizontalalign="center" name="gridcolumn19">
+                                        <wm-label padding="unset 0.5em" caption="Proses mudah dan cepat" name="label4" fontweight="bold" fontsize="20"></wm-label>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                            </wm-layoutgrid>
+                        </wm-container>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn7" horizontalalign="center">
+                        <wm-container name="container3" on-click="Actions.goToPage_kredit_main_page.invoke()">
+                            <wm-layoutgrid name="layoutgrid4">
+                                <wm-gridrow name="gridrow10">
+                                    <wm-gridcolumn columnwidth="12" horizontalalign="center" name="gridcolumn20">
+                                        <wm-icon iconclass="fa fa-percent fa-5x" name="icon3"></wm-icon>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow name="gridrow11">
+                                    <wm-gridcolumn columnwidth="12" horizontalalign="center" name="gridcolumn21">
+                                        <wm-label padding="unset 0.5em" caption="Banyak Promo" name="label5" fontweight="bold" fontsize="20"></wm-label>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                            </wm-layoutgrid>
+                        </wm-container>
                     </wm-gridcolumn>
                 </wm-gridrow>
             </wm-layoutgrid>
